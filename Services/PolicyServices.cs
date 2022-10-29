@@ -48,7 +48,7 @@ namespace TraxHrPolicy.Services
             }
             else if (option == VersionType.Major)
             {
-                var newVersion = Math.Ceiling(float.Parse(parentPolicy.Version));
+                var newVersion = Math.Floor(float.Parse(parentPolicy.Version)) + 1;
                 newPolicyVersion.Version = newVersion.ToString();
                 newPolicyVersion.ChangeType = "major";
             }
