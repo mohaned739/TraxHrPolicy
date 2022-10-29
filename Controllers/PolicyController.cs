@@ -12,9 +12,9 @@ namespace TraxHrPolicy.Controllers
     public class PolicyController : ControllerBase
     {
         private readonly traxhrContext _context;
-        public PolicyController(traxhrContext conetext)
+        public PolicyController(traxhrContext context)
         {
-             _context = conetext;
+             _context = context;
         }
         /// <summary>
         /// Used to generate a new Policy version from its parent policy 
